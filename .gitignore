@@ -1,0 +1,10 @@
+/DataverseAzureFunction.BL/bin/Debug/netcoreapp3.1/*.pdb
+/DataverseAzureFunction.BL/obj/Debug/netcoreapp3.1/*.cache
+/DataverseAzureFunction.DAL/bin/Debug/netcoreapp3.1/*.dll
+*.pdb
+*.dll
+*.cache
+*.editorconfig
+*.CopyComplete
+*.targets
+*.props
