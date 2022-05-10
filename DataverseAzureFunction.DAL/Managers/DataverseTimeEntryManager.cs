@@ -53,7 +53,7 @@ namespace DataverseAzureFunction.DAL.Managers
                     },
                     new ConditionExpression()
                     {
-                        AttributeName = "msdyn_end",
+                        AttributeName = "msdyn_start",
                         Operator = ConditionOperator.LessThan,
                         Values = { endDate }
                     }
