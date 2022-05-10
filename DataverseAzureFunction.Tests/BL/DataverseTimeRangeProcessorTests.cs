@@ -64,6 +64,7 @@ namespace DataverseAzureFunction.Tests.BL
             Assert.AreNotEqual(new Guid(), existingEntryGuid);
             await _dataverseTimeEntryProcessor.ProcessTimeRangeAsync(firstDate, secondDate);
             var entries = await _dataverseTimeEntryManager.GetTimeEntriesAsync();
+            Assert.IsTrue(entries.Any(x => x.Id == existingEntryGuid));
             Assert.AreEqual(5, entries.Count());
         }
 
